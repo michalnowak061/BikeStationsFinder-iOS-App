@@ -68,7 +68,7 @@
 		9DD5919226C1B7A100D0BC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DD5919726C1B7A100D0BC36 /* BikeStationsFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeStationsFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD5919D26C1B7A200D0BC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DD591C226C1C2FF00D0BC36 /* URLStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLStorage.swift; sourceTree = SOURCE_ROOT; };
+		9DD591C226C1C2FF00D0BC36 /* URLStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLStorage.swift; path = BikeStationsFinder/Sources/Model/Providers/URLStorage.swift; sourceTree = SOURCE_ROOT; };
 		9DD591C526C1C33500D0BC36 /* BikeStationsProviderAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsProviderAdapting.swift; sourceTree = "<group>"; };
 		9DD591C726C1C34D00D0BC36 /* BikeStationsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsProvider.swift; sourceTree = "<group>"; };
 		9DD591CB26C1C39A00D0BC36 /* BikeStationsParserAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsParserAdapting.swift; sourceTree = "<group>"; };
