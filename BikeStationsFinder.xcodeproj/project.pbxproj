@@ -32,9 +32,19 @@
 		9D47773D26C291C800BCE234 /* SortingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773C26C291C800BCE234 /* SortingOptions.swift */; };
 		9D47774026C2942A00BCE234 /* BikeStationsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773F26C2942A00BCE234 /* BikeStationsManagerTests.swift */; };
 		9D47774626C2BD0B00BCE234 /* BikeStationStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47774526C2BD0B00BCE234 /* BikeStationStub.swift */; };
+		9D47774B26C2BFC600BCE234 /* CoordinatorAdapting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47774A26C2BFC600BCE234 /* CoordinatorAdapting.swift */; };
+		9D47774D26C2BFE600BCE234 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47774C26C2BFE600BCE234 /* AppCoordinator.swift */; };
+		9D47774F26C2C02100BCE234 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47774E26C2C02100BCE234 /* ListCoordinator.swift */; };
+		9D47775326C2C08900BCE234 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47775226C2C08900BCE234 /* UIViewControllerExtensions.swift */; };
+		9D47775526C2C12100BCE234 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47775426C2C12100BCE234 /* ListViewController.swift */; };
+		9D47775726C2C13600BCE234 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47775626C2C13600BCE234 /* MapViewController.swift */; };
+		9D47775C26C2C1CA00BCE234 /* LabelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47775B26C2C1CA00BCE234 /* LabelCreator.swift */; };
+		9D47775E26C2C1DF00BCE234 /* TitleLabelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47775D26C2C1DF00BCE234 /* TitleLabelCreator.swift */; };
+		9D47776126C2C21500BCE234 /* NavigationControllerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47776026C2C21500BCE234 /* NavigationControllerCreator.swift */; };
+		9D47776326C2C22A00BCE234 /* MainNavigationControllerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47776226C2C22A00BCE234 /* MainNavigationControllerCreator.swift */; };
 		9DD5918526C1B79C00D0BC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918426C1B79C00D0BC36 /* AppDelegate.swift */; };
 		9DD5918726C1B79C00D0BC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918626C1B79C00D0BC36 /* SceneDelegate.swift */; };
-		9DD5918926C1B79C00D0BC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918826C1B79C00D0BC36 /* ViewController.swift */; };
+		9DD5918926C1B79C00D0BC36 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918826C1B79C00D0BC36 /* LoadingViewController.swift */; };
 		9DD5918E26C1B7A100D0BC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD5918D26C1B7A100D0BC36 /* Assets.xcassets */; };
 		9DD5919126C1B7A100D0BC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD5918F26C1B7A100D0BC36 /* LaunchScreen.storyboard */; };
 		9DD591C326C1C2FF00D0BC36 /* URLStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD591C226C1C2FF00D0BC36 /* URLStorage.swift */; };
@@ -79,10 +89,20 @@
 		9D47773C26C291C800BCE234 /* SortingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOptions.swift; sourceTree = "<group>"; };
 		9D47773F26C2942A00BCE234 /* BikeStationsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsManagerTests.swift; sourceTree = "<group>"; };
 		9D47774526C2BD0B00BCE234 /* BikeStationStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationStub.swift; sourceTree = "<group>"; };
+		9D47774A26C2BFC600BCE234 /* CoordinatorAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAdapting.swift; sourceTree = "<group>"; };
+		9D47774C26C2BFE600BCE234 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9D47774E26C2C02100BCE234 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		9D47775226C2C08900BCE234 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9D47775426C2C12100BCE234 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9D47775626C2C13600BCE234 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9D47775B26C2C1CA00BCE234 /* LabelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCreator.swift; sourceTree = "<group>"; };
+		9D47775D26C2C1DF00BCE234 /* TitleLabelCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelCreator.swift; sourceTree = "<group>"; };
+		9D47776026C2C21500BCE234 /* NavigationControllerCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCreator.swift; sourceTree = "<group>"; };
+		9D47776226C2C22A00BCE234 /* MainNavigationControllerCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationControllerCreator.swift; sourceTree = "<group>"; };
 		9DD5918126C1B79C00D0BC36 /* BikeStationsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStationsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD5918426C1B79C00D0BC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DD5918626C1B79C00D0BC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DD5918826C1B79C00D0BC36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DD5918826C1B79C00D0BC36 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		9DD5918D26C1B7A100D0BC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD5919026C1B7A100D0BC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DD5919226C1B7A100D0BC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,6 +220,67 @@
 			path = Stubs;
 			sourceTree = "<group>";
 		};
+		9D47774926C2BFA900BCE234 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9D47774A26C2BFC600BCE234 /* CoordinatorAdapting.swift */,
+				9D47774C26C2BFE600BCE234 /* AppCoordinator.swift */,
+				9D47774E26C2C02100BCE234 /* ListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		9D47775026C2C07500BCE234 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D47775126C2C07A00BCE234 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D47775126C2C07A00BCE234 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D47775226C2C08900BCE234 /* UIViewControllerExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9D47775826C2C19C00BCE234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D47775926C2C1A900BCE234 /* Creators */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D47775926C2C1A900BCE234 /* Creators */ = {
+			isa = PBXGroup;
+			children = (
+				9D47775F26C2C1F900BCE234 /* NavigationControllers */,
+				9D47775A26C2C1B600BCE234 /* Labels */,
+			);
+			path = Creators;
+			sourceTree = "<group>";
+		};
+		9D47775A26C2C1B600BCE234 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				9D47775B26C2C1CA00BCE234 /* LabelCreator.swift */,
+				9D47775D26C2C1DF00BCE234 /* TitleLabelCreator.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		9D47775F26C2C1F900BCE234 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D47776026C2C21500BCE234 /* NavigationControllerCreator.swift */,
+				9D47776226C2C22A00BCE234 /* MainNavigationControllerCreator.swift */,
+			);
+			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
 		9DD5917826C1B79C00D0BC36 = {
 			isa = PBXGroup;
 			children = (
@@ -241,10 +322,13 @@
 		9DD591B426C1B8BA00D0BC36 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9D47774926C2BFA900BCE234 /* Coordinators */,
 				9DD591C026C1C2BF00D0BC36 /* Model */,
+				9D47775826C2C19C00BCE234 /* Views */,
 				9DD591B726C1B96500D0BC36 /* ViewControllers */,
 				9DD591B826C1B96E00D0BC36 /* Delegates */,
 				9DD591B626C1B95F00D0BC36 /* Storyboards */,
+				9D47775026C2C07500BCE234 /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -269,7 +353,9 @@
 		9DD591B726C1B96500D0BC36 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9DD5918826C1B79C00D0BC36 /* ViewController.swift */,
+				9DD5918826C1B79C00D0BC36 /* LoadingViewController.swift */,
+				9D47775426C2C12100BCE234 /* ListViewController.swift */,
+				9D47775626C2C13600BCE234 /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -626,24 +712,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DD591CE26C1C3B800D0BC36 /* BikeStationsParser.swift in Sources */,
-				9DD5918926C1B79C00D0BC36 /* ViewController.swift in Sources */,
+				9DD5918926C1B79C00D0BC36 /* LoadingViewController.swift in Sources */,
 				9DD591C626C1C33500D0BC36 /* BikeStationsProviderAdapting.swift in Sources */,
 				9DD591CC26C1C39A00D0BC36 /* BikeStationsParserAdapting.swift in Sources */,
 				9DD591C826C1C34D00D0BC36 /* BikeStationsProvider.swift in Sources */,
 				9D47772E26C28BCC00BCE234 /* UserTracker.swift in Sources */,
+				9D47774D26C2BFE600BCE234 /* AppCoordinator.swift in Sources */,
 				9DD591D026C1C3D800D0BC36 /* BikeStation.swift in Sources */,
+				9D47775726C2C13600BCE234 /* MapViewController.swift in Sources */,
 				9DD5918526C1B79C00D0BC36 /* AppDelegate.swift in Sources */,
 				9DD591EA26C1E04A00D0BC36 /* SessionAdapterAdapting.swift in Sources */,
 				9D47773826C2917500BCE234 /* BikeStationsManager.swift in Sources */,
 				9D47773D26C291C800BCE234 /* SortingOptions.swift in Sources */,
 				9D47773A26C2919100BCE234 /* BikeStationsManagerDelegate.swift in Sources */,
+				9D47774B26C2BFC600BCE234 /* CoordinatorAdapting.swift in Sources */,
+				9D47775526C2C12100BCE234 /* ListViewController.swift in Sources */,
+				9D47776126C2C21500BCE234 /* NavigationControllerCreator.swift in Sources */,
 				9DD591EC26C1E05400D0BC36 /* SessionAdapter.swift in Sources */,
+				9D47776326C2C22A00BCE234 /* MainNavigationControllerCreator.swift in Sources */,
 				9DD5918726C1B79C00D0BC36 /* SceneDelegate.swift in Sources */,
 				9D47772C26C28BA800BCE234 /* UserTrackerAdapting.swift in Sources */,
 				9DD591D326C1C40C00D0BC36 /* BikeStations.swift in Sources */,
+				9D47774F26C2C02100BCE234 /* ListCoordinator.swift in Sources */,
+				9D47775E26C2C1DF00BCE234 /* TitleLabelCreator.swift in Sources */,
+				9D47775326C2C08900BCE234 /* UIViewControllerExtensions.swift in Sources */,
 				9D47773626C290E900BCE234 /* BikeStationsManagerAdapting.swift in Sources */,
 				9DD591C326C1C2FF00D0BC36 /* URLStorage.swift in Sources */,
 				9D47773026C28BE300BCE234 /* UserTrackerDelegate.swift in Sources */,
+				9D47775C26C2C1CA00BCE234 /* LabelCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
