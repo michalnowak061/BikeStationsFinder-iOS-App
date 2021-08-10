@@ -3,7 +3,7 @@ import Alamofire
 @testable import BikeStationsFinder
 
 class BikeStationsProviderTests: XCTestCase {
-  var sut: BikeStationsProviderAdapting!
+  var sut: BikeStationsProvider!
 
   var stub: SessionAdapterStub!
 
@@ -17,12 +17,18 @@ class BikeStationsProviderTests: XCTestCase {
   }
 
   override func tearDown() {
+    self.stub = nil
     self.mock = nil
     self.sut = nil
     super.tearDown()
   }
 
-  func testSuccess() {
+  func testInit() {
+    XCTAssertNotNil(self.sut.session)
+    XCTAssertNotNil(self.sut.parser)
+  }
+
+  func testShouldEndWithSuccess() {
     let expectation = self.expectation(description: "testSuccess")
     var isSuccess = false
 

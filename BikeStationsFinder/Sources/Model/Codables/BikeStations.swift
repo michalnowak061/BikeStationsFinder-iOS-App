@@ -1,6 +1,6 @@
 import Foundation
 
-// MARK: - BikeStationsCodable
+// MARK: - BikeStations
 struct BikeStations: Codable {
   let features: [Station]
 }
