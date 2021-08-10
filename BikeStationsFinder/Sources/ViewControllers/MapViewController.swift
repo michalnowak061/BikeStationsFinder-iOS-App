@@ -24,12 +24,15 @@ class MapViewController: UIViewController {
   }
 
   // MARK: - Variable's
+  weak var coordinator: CoordinatorAdapting?
+
   var model: BikeStationsManagerAdapting!
 
   // MARK: - Override's
-  init(model: BikeStationsManagerAdapting) {
+  init(model: BikeStationsManagerAdapting, coordinator: CoordinatorAdapting?) {
     super.init(nibName: nil, bundle: nil)
     self.model = model
+    self.coordinator = coordinator
     self.selectedStationAdress = "Adress is loading..."
   }
 
@@ -44,7 +47,6 @@ class MapViewController: UIViewController {
   override func loadView() {
     super.loadView()
     self.setup()
-    self.loadAdress()
   }
 
   override func viewDidLoad() {
@@ -60,6 +62,7 @@ class MapViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.model.delegate = self
+    self.loadAdress()
   }
 
   // MARK: - Private function's

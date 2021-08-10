@@ -117,7 +117,7 @@ class LoadingViewController: UIViewController {
   }
 
   private func showListCoordinator() {
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { _ in
       if let coordinator = self.coordinator as? AppCoordinator, let model = self.model {
         coordinator.showListCoordinator(model: model)
       }
