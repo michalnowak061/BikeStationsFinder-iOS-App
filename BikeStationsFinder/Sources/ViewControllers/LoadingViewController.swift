@@ -47,6 +47,10 @@ class LoadingViewController: UIViewController {
     self.fetchData()
   }
 
+  override var prefersStatusBarHidden: Bool {
+    return true
+  }
+
   // MARK: - Function's
   func fetchData() {
     self.model.fetchData { succes in

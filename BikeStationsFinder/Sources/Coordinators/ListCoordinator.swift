@@ -2,7 +2,7 @@ import UIKit
 
 class ListCoordinator: CoordinatorAdapting {
   // MARK: - Private constant's
-  private let viewControllersBackgroundColor = #colorLiteral(red: 0.9357246112, green: 0.9357246112, blue: 0.9357246112, alpha: 1)
+  private let viewControllersBackgroundColor = #colorLiteral(red: 0.937254902, green: 0.9357246112, blue: 0.9357246112, alpha: 1)
 
   // MARK: - Variable's
   var navigationController: UINavigationController
@@ -23,6 +23,7 @@ class ListCoordinator: CoordinatorAdapting {
     let listViewController = ListViewController(model: self.model, coordinator: self)
     listViewController.view.backgroundColor = self.viewControllersBackgroundColor
 
+    self.navigationController.navigationBar.barStyle = .black
     self.navigationController.setNavigationBarHidden(false, animated: true)
     self.navigationController.pushViewController(listViewController, animated: true)
   }
@@ -31,6 +32,7 @@ class ListCoordinator: CoordinatorAdapting {
     let mapViewController = MapViewController(model: self.model)
     mapViewController.view.backgroundColor = self.viewControllersBackgroundColor
 
+    self.navigationController.navigationBar.barStyle = .black
     self.navigationController.pushViewController(mapViewController, animated: true)
   }
 }
