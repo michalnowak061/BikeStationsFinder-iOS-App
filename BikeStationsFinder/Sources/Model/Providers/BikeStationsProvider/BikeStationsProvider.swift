@@ -2,11 +2,11 @@ import Foundation
 import Alamofire
 
 class BikeStationsProvider: BikeStationsProviderAdapting {
-  var session: SessionAdapterAdapting!
+  var session: SessionAdapterAdapting
 
-  var parser: BikeStationsParserAdapting!
+  var parser: BikeStationsParserAdapting
 
-  init(
+  required init(
     session: SessionAdapterAdapting = SessionAdapter(),
     parser: BikeStationsParserAdapting = BikeStationsParser()
   ) {

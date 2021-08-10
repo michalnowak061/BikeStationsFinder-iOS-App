@@ -26,6 +26,12 @@
 		9D47772E26C28BCC00BCE234 /* UserTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47772D26C28BCC00BCE234 /* UserTracker.swift */; };
 		9D47773026C28BE300BCE234 /* UserTrackerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47772F26C28BE300BCE234 /* UserTrackerDelegate.swift */; };
 		9D47773326C28FE100BCE234 /* UserTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773226C28FE100BCE234 /* UserTrackerTests.swift */; };
+		9D47773626C290E900BCE234 /* BikeStationsManagerAdapting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773526C290E900BCE234 /* BikeStationsManagerAdapting.swift */; };
+		9D47773826C2917500BCE234 /* BikeStationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773726C2917500BCE234 /* BikeStationsManager.swift */; };
+		9D47773A26C2919100BCE234 /* BikeStationsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773926C2919100BCE234 /* BikeStationsManagerDelegate.swift */; };
+		9D47773D26C291C800BCE234 /* SortingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773C26C291C800BCE234 /* SortingOptions.swift */; };
+		9D47774026C2942A00BCE234 /* BikeStationsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47773F26C2942A00BCE234 /* BikeStationsManagerTests.swift */; };
+		9D47774626C2BD0B00BCE234 /* BikeStationStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47774526C2BD0B00BCE234 /* BikeStationStub.swift */; };
 		9DD5918526C1B79C00D0BC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918426C1B79C00D0BC36 /* AppDelegate.swift */; };
 		9DD5918726C1B79C00D0BC36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918626C1B79C00D0BC36 /* SceneDelegate.swift */; };
 		9DD5918926C1B79C00D0BC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5918826C1B79C00D0BC36 /* ViewController.swift */; };
@@ -67,6 +73,12 @@
 		9D47772D26C28BCC00BCE234 /* UserTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTracker.swift; sourceTree = "<group>"; };
 		9D47772F26C28BE300BCE234 /* UserTrackerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrackerDelegate.swift; sourceTree = "<group>"; };
 		9D47773226C28FE100BCE234 /* UserTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrackerTests.swift; sourceTree = "<group>"; };
+		9D47773526C290E900BCE234 /* BikeStationsManagerAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsManagerAdapting.swift; sourceTree = "<group>"; };
+		9D47773726C2917500BCE234 /* BikeStationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsManager.swift; sourceTree = "<group>"; };
+		9D47773926C2919100BCE234 /* BikeStationsManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsManagerDelegate.swift; sourceTree = "<group>"; };
+		9D47773C26C291C800BCE234 /* SortingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOptions.swift; sourceTree = "<group>"; };
+		9D47773F26C2942A00BCE234 /* BikeStationsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsManagerTests.swift; sourceTree = "<group>"; };
+		9D47774526C2BD0B00BCE234 /* BikeStationStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationStub.swift; sourceTree = "<group>"; };
 		9DD5918126C1B79C00D0BC36 /* BikeStationsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStationsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD5918426C1B79C00D0BC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DD5918626C1B79C00D0BC36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +162,42 @@
 				9D47773226C28FE100BCE234 /* UserTrackerTests.swift */,
 			);
 			path = UserTrackerTests;
+			sourceTree = "<group>";
+		};
+		9D47773426C290CF00BCE234 /* BikeStationsManager */ = {
+			isa = PBXGroup;
+			children = (
+				9D47773526C290E900BCE234 /* BikeStationsManagerAdapting.swift */,
+				9D47773926C2919100BCE234 /* BikeStationsManagerDelegate.swift */,
+				9D47773726C2917500BCE234 /* BikeStationsManager.swift */,
+				9D47773B26C291B600BCE234 /* Enums */,
+			);
+			path = BikeStationsManager;
+			sourceTree = "<group>";
+		};
+		9D47773B26C291B600BCE234 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9D47773C26C291C800BCE234 /* SortingOptions.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9D47773E26C2940600BCE234 /* BikeStationsManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D47773F26C2942A00BCE234 /* BikeStationsManagerTests.swift */,
+				9D47774426C2BCEC00BCE234 /* Stubs */,
+			);
+			path = BikeStationsManagerTests;
+			sourceTree = "<group>";
+		};
+		9D47774426C2BCEC00BCE234 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				9D47774526C2BD0B00BCE234 /* BikeStationStub.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		9DD5917826C1B79C00D0BC36 = {
@@ -242,6 +290,7 @@
 				9DD591C926C1C37B00D0BC36 /* Parsers */,
 				9DD591C126C1C2D000D0BC36 /* Providers */,
 				9D47772A26C28B9500BCE234 /* UserTracker */,
+				9D47773426C290CF00BCE234 /* BikeStationsManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +362,7 @@
 				9DD591D726C1C4B100D0BC36 /* ParsersTests */,
 				9DD591DB26C1C69700D0BC36 /* ProvidersTests */,
 				9D47773126C28FC000BCE234 /* UserTrackerTests */,
+				9D47773E26C2940600BCE234 /* BikeStationsManagerTests */,
 			);
 			path = ModelTests;
 			sourceTree = "<group>";
@@ -584,10 +634,14 @@
 				9DD591D026C1C3D800D0BC36 /* BikeStation.swift in Sources */,
 				9DD5918526C1B79C00D0BC36 /* AppDelegate.swift in Sources */,
 				9DD591EA26C1E04A00D0BC36 /* SessionAdapterAdapting.swift in Sources */,
+				9D47773826C2917500BCE234 /* BikeStationsManager.swift in Sources */,
+				9D47773D26C291C800BCE234 /* SortingOptions.swift in Sources */,
+				9D47773A26C2919100BCE234 /* BikeStationsManagerDelegate.swift in Sources */,
 				9DD591EC26C1E05400D0BC36 /* SessionAdapter.swift in Sources */,
 				9DD5918726C1B79C00D0BC36 /* SceneDelegate.swift in Sources */,
 				9D47772C26C28BA800BCE234 /* UserTrackerAdapting.swift in Sources */,
 				9DD591D326C1C40C00D0BC36 /* BikeStations.swift in Sources */,
+				9D47773626C290E900BCE234 /* BikeStationsManagerAdapting.swift in Sources */,
 				9DD591C326C1C2FF00D0BC36 /* URLStorage.swift in Sources */,
 				9D47773026C28BE300BCE234 /* UserTrackerDelegate.swift in Sources */,
 			);
@@ -600,6 +654,8 @@
 				9DD591DD26C1C6B900D0BC36 /* BikeStationsProviderTests.swift in Sources */,
 				9D47773326C28FE100BCE234 /* UserTrackerTests.swift in Sources */,
 				9DD591E126C1C82E00D0BC36 /* BikeStationsStub.swift in Sources */,
+				9D47774626C2BD0B00BCE234 /* BikeStationStub.swift in Sources */,
+				9D47774026C2942A00BCE234 /* BikeStationsManagerTests.swift in Sources */,
 				9DD591E726C1D71C00D0BC36 /* SessionAdapterStub.swift in Sources */,
 				9DD591E426C1CAD800D0BC36 /* BikeStationsParserMock.swift in Sources */,
 				9DD591DA26C1C4E400D0BC36 /* BikeStationsParserTests.swift in Sources */,

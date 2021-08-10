@@ -34,13 +34,15 @@ class BikeStationsProviderTests: XCTestCase {
 
     self.stub.withSucess = true
     self.sut.fetch { response in
-      switch response {
-      case .success:
-        isSuccess = true
-      case .failure:
-        break
+      if let response = response {
+        switch response {
+        case .success:
+          isSuccess = true
+        case .failure:
+          break
+        }
+        expectation.fulfill()
       }
-      expectation.fulfill()
     }
 
     waitForExpectations(timeout: 0.1, handler: nil)
@@ -49,19 +51,21 @@ class BikeStationsProviderTests: XCTestCase {
     XCTAssertEqual(self.mock.parseCallCount, 1)
   }
 
-  func testFail() {
+  func testShouldEndWithFail() {
     let expectation = self.expectation(description: "testFail")
     var isFail = false
 
     self.stub.withSucess = false
     self.sut.fetch { response in
-      switch response {
-      case .success:
-        break
-      case .failure:
-        isFail = true
+      if let response = response {
+        switch response {
+        case .success:
+          break
+        case .failure:
+          isFail = true
+        }
+        expectation.fulfill()
       }
-      expectation.fulfill()
     }
 
     waitForExpectations(timeout: 0.1, handler: nil)
