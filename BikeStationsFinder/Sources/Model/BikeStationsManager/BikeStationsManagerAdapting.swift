@@ -7,6 +7,7 @@ protocol BikeStationsManagerAdapting {
 
   var selectedStationIndex: Int? { get set }
 
+  // periphery: ignore
   func setStations(stations: [BikeStation])
 
   func fetchData(completion: @escaping (Bool) -> Void)

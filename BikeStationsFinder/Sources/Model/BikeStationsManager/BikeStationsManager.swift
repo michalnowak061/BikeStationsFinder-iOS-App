@@ -33,7 +33,7 @@ class BikeStationsManager: BikeStationsManagerAdapting {
 
     self.tracker.delegate = self
   }
-
+  
   func setStations(stations: [BikeStation]) {
     self.stations = stations
   }

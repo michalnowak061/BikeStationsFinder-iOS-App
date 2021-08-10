@@ -24,15 +24,12 @@ class MapViewController: UIViewController {
   }
 
   // MARK: - Variable's
-  weak var coordinator: CoordinatorAdapting?
-
   var model: BikeStationsManagerAdapting!
 
   // MARK: - Override's
-  init(model: BikeStationsManagerAdapting, coordinator: CoordinatorAdapting?) {
+  init(model: BikeStationsManagerAdapting) {
     super.init(nibName: nil, bundle: nil)
     self.model = model
-    self.coordinator = coordinator
     self.selectedStationAdress = "Adress is loading..."
   }
 

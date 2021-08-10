@@ -29,7 +29,7 @@ class ListCoordinator: CoordinatorAdapting {
   }
 
   func showMapViewController() {
-    let mapViewController = MapViewController(model: self.model, coordinator: self)
+    let mapViewController = MapViewController(model: self.model)
     mapViewController.view.backgroundColor = self.viewControllersBackgroundColor
 
     self.navigationController.navigationBar.barStyle = .black
