@@ -1,5 +1,7 @@
 # BikeStationsFinder-iOS-App
 
+
+
 ## Runtime environment
 <img src="https://img.shields.io/badge/Swift-5.3-orange.svg?style=flat" /> <img src="https://img.shields.io/badge/iOS-11.0-blue.svg?style=flat" /> <img src="https://img.shields.io/badge/Xcode-12.4-blue.svg?style=flat" /> <img src="https://img.shields.io/badge/MacOS-11.2.3-blue.svg?style=flat" />
 
@@ -13,42 +15,41 @@
 <a href="https://github.com/SnapKit/SnapKit"> <img src="https://i.imgur.com/YrWcQOc.jpg" width="300" height="50" /> </a>
 
 Another:
-- simple CSV parsing: https://github.com/swiftcsv/SwiftCSV
+- animated loading dots: https://github.com/Abedalkareem/AMDots
 
 ## Table of contents
 * [General info](#general-info)
 * [Functionality](#functionality)
 * [How to build](#how-to-build)
-* [Contact](#contact)
 
 ## General info
 
-iPhone/iPad app with functions useful to mechanical engineers or people related to mechanics ⚙️ Part of the app written in MVC and part in MVVM with RxSwift
+iPhone app for displaying bike stations in Poznań
 
 ## Functionality
 
-- calculation of the minimum number of belts and type for a belt transmission
+- displaying stations as a list
+- showing station on map
+- showing distance between user and stations (real time)
+- exact address only in map view (reverse geocoding CLGeocoder API calls limit)
+- info about each station:
+  - number of free bikes
+  - number of free racks
+  - distance between user and station
+  - adress
+
+
+  <p align="center"> <img src="Screenshots/screenshot1.png"{:height="20%" width="20%"} />
+  		   <img src="Screenshots/screenshot2.png"{:height="20%" width="20%"} />
+  		   <img src="Screenshots/screenshot3.png"{:height="20%" width="20%"} />
+  		   <img src="Screenshots/screenshot4.png"{:height="20%" width="20%"} /> </p>
 
 ## How to build
-Install Homebrew:
+In app main folder run:
+```
+pod install
+```
+After installing dependencies, you can run the project(`BikeStationsFinder.xcworkspace`).
 
-> You can skip this step if you already have Homebrew installed.
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-Now install Periphery itself:
-```
-brew tap peripheryapp/periphery && brew install periphery
-```
-
-Next in app main folder run this command:
-```
-sh install_dependencies.sh
-```
-You can go for a coffee ☕️. After installing dependencies, you can run the project(`CalculatorForMechanics.xcodeproj`).
-
-## Contact
-<a href="https://www.linkedin.com/in/michał-nowak-53075a17a/"> <img src="https://i.imgur.com/Ba61VxB.png" width="40" height="40" /> </a>
-<a href="https://twitter.com/mnowak061"> <img src="https://imgur.com/ocbAQn7.png" width="40" height="40" /> </a>
-<a href="https://www.kaggle.com/mnowak061"> <img src="https://i.imgur.com/OUxxJ3I.png" width="40" height="40" /> </a>ų
+## Demo
+<p align="center"> <img src="Screenshots/demo.gif" {:height="30%" width="30%"} /> </p>
